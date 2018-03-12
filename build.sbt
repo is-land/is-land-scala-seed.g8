@@ -4,6 +4,12 @@ version := "0.1"
 
 scalaVersion := "2.12.4"
 
+homepage := Some(url("https://github.com/is-land/is-land-scala-seed.g8"))
+
+organizationName := "is-land Systems Inc."
+
+organizationHomepage := Some(url("https://github.com/is-land"))
+
 enablePlugins(Giter8Plugin)
 
 resolvers += Resolver.url("typesafe", url("http://repo.typesafe.com/typesafe/ivy-releases/"))(Resolver.ivyStylePatterns)
