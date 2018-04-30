@@ -2,7 +2,7 @@ name := "is-land-scala-seed"
 
 version := "0.1"
 
-scalaVersion := "2.12.5"
+scalaVersion := "2.12.6"
 
 homepage := Some(url("https://github.com/is-land/is-land-scala-seed.g8"))
 
