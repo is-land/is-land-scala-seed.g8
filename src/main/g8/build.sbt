@@ -10,6 +10,8 @@ organization := "$organization$"
 
 scalaVersion := "$scalaV$"
 
+val cpus = Runtime.getRuntime().availableProcessors().toString
+
 scalacOptions ++= Seq(
   "-target:jvm-1.8",
   "-deprecation",
@@ -26,7 +28,8 @@ scalacOptions ++= Seq(
   "-Ywarn-unused:params",
   "-Ywarn-unused:patvars",
   "-Ywarn-unused:privates",
-  "-Ywarn-value-discard"
+  "-Ywarn-value-discard",
+  "-Ybackend-parallelism", cpus
 )
 
 libraryDependencies ++= Seq(
