@@ -10,7 +10,7 @@ organization := "$organization$"
 
 scalaVersion := "$scalaV$"
 
-val cpus = Runtime.getRuntime().availableProcessors().toString
+val cpus = sys.runtime.availableProcessors().toString
 
 scalacOptions ++= Seq(
   "-target:jvm-1.8",
